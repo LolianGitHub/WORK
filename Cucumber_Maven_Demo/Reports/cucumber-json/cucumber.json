@@ -1,0 +1,157 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 127116777,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I\u0027ve a valid set of data and access",
+            "match": {
+              "location": "StepDefinitionDemo.ValidUserCheck()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3331218255,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitionDemo.testSetUp(Scenario)"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Single User Registration process",
+        "description": "",
+        "id": "registration-in-flight-site;single-user-registration-process",
+        "after": [
+          {
+            "result": {
+              "duration": 814560418,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitionDemo.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4122631681,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Registration page Display",
+            "match": {
+              "location": "StepDefinitionDemo.registrationDisplay()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 368447799,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter Valid Data",
+            "match": {
+              "location": "StepDefinitionDemo.enterValidData(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "UserName",
+                  "aditya"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Password",
+                  "test12"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "ConfirmPassword",
+                  "test12"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1053952336,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click Submit",
+            "match": {
+              "location": "StepDefinitionDemo.click_Submit()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 842986617,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click Signoff",
+            "match": {
+              "location": "StepDefinitionDemo.click_Signoff()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 77692,
+              "status": "passed"
+            },
+            "output": [
+              "Finishied scenario"
+            ],
+            "line": 15,
+            "name": "Close",
+            "match": {
+              "location": "StepDefinitionDemo.close()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Registration"
+          }
+        ]
+      }
+    ],
+    "name": "Registration in Flight site",
+    "description": "",
+    "id": "registration-in-flight-site",
+    "keyword": "Feature",
+    "uri": "src/test/feature/demo.feature"
+  }
+]

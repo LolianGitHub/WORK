@@ -1,0 +1,17 @@
+Feature: Write Shopping Review
+
+  Background:                                 # src/test/feature/demo.feature:3
+    Given I've a valid set of data and access # StepDefinitionDemo.ValidUserCheck()
+Finishied scenario
+
+  @ShoppingWriteReview
+  Scenario: Shopping Write Review Process               # src/test/feature/demo.feature:7
+    When Home page Display                              # StepDefinitionDemo.registrationDisplay()
+    Then Enter Shopping Page                            # StepDefinitionDemo.EnterShoppingPage()
+    Then Select Brands Category                         # StepDefinitionDemo.SelectBrandsCategory()
+    Then Select Acteon Category                         # StepDefinitionDemo.SelectActeonCategory()
+    Then Select Prduct named RISKONTROL Adapter LU INOX # StepDefinitionDemo.SelectProduct()
+    Then Click Write a Review                           # StepDefinitionDemo.click_WriteReview()
+    Then Enter Valid Data                               # StepDefinitionDemo.enterValidData(DataTable)
+    Then Click Submit                                   # StepDefinitionDemo.click_Submit()
+    And Close                                           # StepDefinitionDemo.close()
